@@ -2,11 +2,11 @@
 <html>
 <head><title>Checkout</title></head>
 <body>
-    <iframe src="https://fixedfloat.com/widget?from=USD&to=BTC&amount=50&address=bc1qw32fllh69mlfulqzxmd02zw2v02sqhvj3j74yl" width="100%" height="600"></iframe>
+    <p>Redirecting to payment...</p>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const amount = urlParams.get("amount");
-        document.querySelector("iframe").src += `&amount=${amount}`;
+        window.location = `https://fixedfloat.com/?from=USD&to=BTC&amount=${amount}&address=bc1qw32fllh69mlfulqzxmd02zw2v02sqhvj3j74yl`;
     </script>
 </body>
 </html>

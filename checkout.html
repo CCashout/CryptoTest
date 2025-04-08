@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><title>Checkout</title><script src="https://coinpayments.net/lib/coinpayments.min.js"></script></head>
+<head><title>Checkout</title></head>
 <body>
-    <div id="payment-container"></div>
+    <iframe src="https://fixedfloat.com/widget?from=USD&to=BTC&amount=50&address=bc1qw32fllh69mlfulqzxmd02zw2v02sqhvj3j74yl" width="100%" height="600"></iframe>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const item = urlParams.get("item");
         const amount = urlParams.get("amount");
-        CoinPayments.createPayment({
-            amount: amount,
-            currency: "USD",
-            crypto: "BTC",
-            merchantId: "2c4250e64e68b42fbb59ff3a05db62f0", // From CoinPayments
-            wallet: "bc1qw32fllh69mlfulqzxmd02zw2v02sqhvj3j74yl", // Wasabi BTC address
-            successUrl: "https://ccashout.com/thanks.html",
-            cancelUrl: "https://ccashout.com/index.html",
-            buyerEmail: "guest@email.com" // Guest, no input
-        }, "#payment-container");
+        document.querySelector("iframe").src += `&amount=${amount}`;
     </script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ccashout - Credit Card to Crypto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #message {
+            margin-top: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ccashout - Pay with Credit Card</h1>
+    <p>Pay 49.99€ via credit card, instantly converted to Bitcoin. Low security, no 3DS or 2FA required.</p>
+    <!-- CoinPayments Button -->
+    <a href="https://www.coinpayments.net/index.php?cmd=_pay&reset=1&merchant=YOUR_MERCHANT_ID&item_name=Crypto+Payment&currency=EUR&amountf=49.99&want_shipping=0&success_url=https://yourusername.github.io/payment-site/success.html&cancel_url=https://yourusername.github.io/payment-site/cancel.html&allow_currency=0&crypto_currency=BTC">
+        <button>Pay Now</button>
+    </a>
+    <p id="message">Funds go directly to our private Bitcoin wallet.</p>
+</body>
+</html>

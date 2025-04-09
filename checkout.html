@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head><title>Checkout</title></head>
+<head>
+    <title>Redirecting...</title>
+</head>
 <body>
-    <p>Redirecting...</p>
+    <p>Redirecting to payment...</p>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const amount = urlParams.get("amount");
-        window.location = `https://localmonero.co/trade/xyz123?amount=${amount}&address=bc1qw32fllh69mlfulqzxmd02zw2v02sqhvj3j74yl`;
+        window.location = `https://changenow.io/?from=usd&to=btc&amount=${amount}&address=bc1qsh96dkcsvd506fjaj9f5cu4vvhsl8smjt30320`;
     </script>
 </body>
 </html>

@@ -2,13 +2,10 @@
 <html>
 <head><title>Payment Site</title></head>
 <body>
-    <div class="items">
-        <div class="item"><h2>Code A - $50</h2><button onclick="checkout('Code A', 50)">Buy Now</button></div>
-        <div class="item"><h2>Code B - $50</h2><button onclick="checkout('Code B', 50)">Buy Now</button></div>
-    </div>
+    <button onclick="checkout(50)">Buy Code - $50</button>
     <script>
-        function checkout(item, amount) {
-            window.location = `checkout.html?item=${item}&amount=${amount}`;
+        function checkout(amount) {
+            window.location = `checkout.html?amount=${amount}`;
         }
     </script>
 </body>

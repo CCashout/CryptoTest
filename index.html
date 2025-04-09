@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head><title>Payment Site</title></head>
+<head>
+    <title>Payment Site</title>
+</head>
 <body>
-    <button onclick="checkout(50)">Buy Code - $50</button>
+    <h1>Buy Product</h1>
+    <button onclick="checkout(50)">Pay $50 with Credit Card</button>
     <script>
         function checkout(amount) {
             window.location = `checkout.html?amount=${amount}`;
